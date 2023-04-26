@@ -2,7 +2,7 @@ package officeHours.officeHoursWeek12Tasks.superHero;
 
 import java.util.ArrayList;
 
-public class DC extends SuperHero{
+public class DC extends SuperHero {
 
     String city;
 
@@ -26,5 +26,5 @@ public class DC extends SuperHero{
                 ", city=" + city +
                 '}';
     }
-    }
 }
+
