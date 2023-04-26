@@ -1,8 +1,10 @@
 package officeHours.officeHoursWeek12Tasks.superHero;
 
+import java.util.ArrayList;
+
 public class Marvel extends SuperHero{
 
-    public Marvel(String heroName, String realName, String[] powers) {
+    public Marvel(String heroName, String realName, ArrayList<String> powers) {
         super(heroName, realName, "Marvel", powers);
     }
 

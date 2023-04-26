@@ -8,13 +8,14 @@ public class SuperHero {
     String heroName;
     String realName;
     String universe;
-    ArrayList<String> powers;
+    ArrayList<String> powers = new ArrayList<>();
 
-    public SuperHero(String heroName, String realName, String universe, String[] powers) {
+
+    public SuperHero(String heroName, String realName, String universe, ArrayList<String> powers) {
         this.heroName = heroName;
         this.realName = realName;
         this.universe = universe;
-        this.powers = new ArrayList<>();
+        this.powers.addAll(powers);
     }
 
     void protect(){
@@ -27,7 +28,7 @@ public class SuperHero {
                 "heroName='" + heroName + '\'' +
                 ", realName='" + realName + '\'' +
                 ", universe='" + universe + '\'' +
-                ", powers=" + Arrays.toString(powers) +
+                ", powers=" + powers +
                 '}';
     }
 }
