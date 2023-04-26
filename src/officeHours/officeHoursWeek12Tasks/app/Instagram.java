@@ -3,8 +3,8 @@ package officeHours.officeHoursWeek12Tasks.app;
 public class Instagram extends App {
 
 
-    public Instagram(String name, int version) {
-        super(name, version);
+    public Instagram(int version) {
+        super("Instagram", version);
     }
 
     public void postPicture (){

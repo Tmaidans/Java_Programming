@@ -4,7 +4,7 @@ public class AppTest {
 
     public static void main(String[] args) {
 
-        Instagram insta = new Instagram("Insta",2);
+        Instagram insta = new Instagram(2);
 
         insta.postPicture();
         System.out.println(insta.name);

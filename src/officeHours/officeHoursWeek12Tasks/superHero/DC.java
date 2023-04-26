@@ -7,7 +7,7 @@ public class DC extends SuperHero {
     String city;
 
     public DC(String heroName, String realName, ArrayList<String> powers, String city) {
-        super(heroName, realName, "DC", powers);
+        super(heroName, realName, powers);
         this.city = city;
     }
 
