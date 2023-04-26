@@ -1,0 +1,17 @@
+package officeHours.officeHoursWeek12Tasks.superHero;
+
+public class Marvel extends SuperHero{
+
+    public Marvel(String heroName, String realName, String[] powers) {
+        super(heroName, realName, "Marvel", powers);
+    }
+
+    void callAvengers(){
+        System.out.println("Calling all avengers");
+    }
+
+    @Override
+    void protect() {
+        System.out.println(heroName + "protecting ny any means necessary");
+    }
+}
