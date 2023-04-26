@@ -22,7 +22,7 @@ public class Candy {
 
     @Override
     public String toString() {
-        return "{" +
+        return  getClass().getSimpleName() + "{" +
                 "brand='" + brand + '\'' +
                 ", quantity=" + quantity +
                 ", containsPeanuts=" + containsPeanuts +
