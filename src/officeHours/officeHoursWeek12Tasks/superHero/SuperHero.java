@@ -1,5 +1,6 @@
 package officeHours.officeHoursWeek12Tasks.superHero;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class SuperHero {
@@ -7,13 +8,13 @@ public class SuperHero {
     String heroName;
     String realName;
     String universe;
-    String[] powers;
+    ArrayList<String> powers;
 
     public SuperHero(String heroName, String realName, String universe, String[] powers) {
         this.heroName = heroName;
         this.realName = realName;
         this.universe = universe;
-        this.powers = powers;
+        this.powers = new ArrayList<>();
     }
 
     void protect(){
