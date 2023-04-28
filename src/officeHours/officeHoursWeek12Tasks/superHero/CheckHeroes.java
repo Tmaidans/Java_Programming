@@ -20,6 +20,14 @@ public class CheckHeroes {
     hero2.protect();
         System.out.println(hero2);
 
+        System.out.println("-----------------------------------------------------------------------------------------------");
+
+        SuperHero2 hero3 = new SuperHero2("Spidey","Timmy",new ArrayList<>(Arrays.asList("master detective", "martial arts", "technical tools")));
+        System.out.println(hero3);
+
+        SuperHero2 hero4 = new SuperHero2("Battyy","jiffy",new ArrayList<>(Arrays.asList("jerking", "martial arts", "technical tools")));
+        System.out.println(hero4);
+
     }
 
 
