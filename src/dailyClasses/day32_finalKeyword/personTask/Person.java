@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class Person {
 
     private String name;
-    private final char gender;
+    final char gender;
     private final int age;
     private final LocalDate DOB;
 

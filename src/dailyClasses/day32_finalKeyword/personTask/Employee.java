@@ -3,8 +3,7 @@ package dailyClasses.day32_finalKeyword.personTask;
 import java.time.LocalDate;
 
 public class Employee extends Person {
-
-     String jobTitle;
+    private String jobTitle;
     private double salary;
 
     public Employee(String name, char gender, LocalDate DOB, String jobTitle, double salary) {
