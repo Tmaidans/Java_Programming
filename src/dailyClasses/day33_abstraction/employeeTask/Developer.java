@@ -20,4 +20,20 @@ public class Developer extends Employee {
     public void work() {
 
     }
+
+    @Override
+    public String toString() {
+
+        return getClass().getSimpleName() + "{" +
+                "name='" + getName() + '\'' +
+                ", age=" + getAge() +
+                ", gender=" + getGender() +
+                ", id='" + getId() + '\'' +
+                ", jobTitle='" + getJobTitle() + '\'' +
+                ", salary=" + getSalary() +
+                ", programing language=" + getProgrammingLanguage() +
+                '}';
+    }
+
+
 }
