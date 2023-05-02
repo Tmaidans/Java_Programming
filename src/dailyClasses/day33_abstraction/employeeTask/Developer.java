@@ -23,16 +23,12 @@ public class Developer extends Employee {
 
     @Override
     public String toString() {
-
-        return getClass().getSimpleName() + "{" +
-                "name='" + getName() + '\'' +
-                ", age=" + getAge() +
-                ", gender=" + getGender() +
-                ", id='" + getId() + '\'' +
-                ", jobTitle='" + getJobTitle() + '\'' +
-                ", salary=" + getSalary() +
+         return super.toString().replace("}","") +
                 ", programing language=" + getProgrammingLanguage() +
                 '}';
+
+
+
     }
 
 
