@@ -18,7 +18,6 @@ public class Developer extends Employee {
 
     @Override
     public void work() {
-
     }
 
     @Override
@@ -26,9 +25,6 @@ public class Developer extends Employee {
          return super.toString().replace("}","") +
                 ", programing language=" + getProgrammingLanguage() +
                 '}';
-
-
-
     }
 
 
