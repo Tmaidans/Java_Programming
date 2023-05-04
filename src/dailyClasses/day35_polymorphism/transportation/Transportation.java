@@ -2,10 +2,10 @@ package dailyClasses.day35_polymorphism.transportation;
 
 public abstract class Transportation {
 
-    final String make;
-    final String model;
+    private final String make;
+    private final String model;
     private String color;
-    final int year;
+    private final int year;
     private double price;
 
 
@@ -49,7 +49,7 @@ public abstract class Transportation {
 
     @Override
     public String toString() {
-        return "Transportation{" +
+        return getClass().getSimpleName() + "{" +
                 "make='" + getMake() + '\'' +
                 ", model='" + getModel() + '\'' +
                 ", color='" + getColor() + '\'' +
