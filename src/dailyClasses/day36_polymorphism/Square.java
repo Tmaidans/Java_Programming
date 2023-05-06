@@ -20,6 +20,7 @@ public class Square {
             return true;
         }
 
+
         return false;
 
     }
