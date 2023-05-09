@@ -6,7 +6,11 @@ public class ExceptionsIntro {
 
         String str = "Java";
 
-        char ch = str.charAt(250);
+        // char ch = str.charAt(250); // unchecked exception
+
+        //  System.out.println(ch);
+
+        // System.out.println(50/0); // unchecked exception
 
     }
 
