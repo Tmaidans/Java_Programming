@@ -1,15 +1,13 @@
 package dailyClasses.day38_exceptions;
 
-class CustomCheckedException extends Exception{
+class CustomCheckedException extends Exception {
 
 }
 
-class CustomUncheckedException extends RuntimeException{
+class CustomUncheckedException extends RuntimeException {
 
 
 }
-
-
 
 
 public class CustomExceptions {
@@ -21,6 +19,10 @@ public class CustomExceptions {
         } catch (CustomCheckedException e) {
             e.printStackTrace();
         }
+
+        System.out.println("------------------------------------------------------------------");
+
+        throw new CustomUncheckedException();
 
     }
 
