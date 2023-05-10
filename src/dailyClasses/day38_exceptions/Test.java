@@ -12,7 +12,7 @@ public class Test {
 
         Library.sleep(1);
 
-        System.out.println("How are you today? ");
+        System.out.println("How are you today?");
 
         System.out.println("-----------------------------------------------------------------------------------");
 
@@ -20,7 +20,7 @@ public class Test {
             throw new BreakTimeException();
         }
 
-        throw new BreakTimeException();
+        throw new BreakTimeException("Time to dip");
 
     }
 
