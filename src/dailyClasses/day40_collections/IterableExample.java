@@ -1,9 +1,6 @@
 package dailyClasses.day40_collections;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class IterableExample {
 
@@ -38,11 +35,11 @@ public class IterableExample {
 
         Iterator<Integer> it = list2.iterator();
 
-        while(it.hasNext()){
-           Integer each = it.next();
-           if(each<5){
-               it.remove();
-           }
+        while (it.hasNext()) {
+            Integer each = it.next();
+            if (each < 5) {
+                it.remove();
+            }
         }
 
         System.out.println(list2);
@@ -52,14 +49,18 @@ public class IterableExample {
         List<Integer> list3 = new ArrayList<>();
         list3.addAll(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 1, 4, 5, 5, 2, 3, 4, 5, 6, 7, 10));
 
-        list3.removeIf(each -> each<5);
+        list3.removeIf(each -> each < 5);
 
         System.out.println(list3);
 
+        System.out.println("----------------------------------------------------------------");
 
+        List<Integer> list5 = new LinkedList<>();
+        list5.addAll(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 1, 4, 5, 5, 2, 3, 4, 5, 6, 7, 10));
 
+        list5.removeIf(p -> p < 5);
 
-
+        System.out.println("----------------------------------------------------------------");
     }
 
 }
