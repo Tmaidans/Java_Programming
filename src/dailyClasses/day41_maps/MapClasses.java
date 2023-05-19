@@ -34,9 +34,31 @@ public class MapClasses {
 
         System.out.println("----------------------------------------------------------------------------------------");
 
-        Map<String, Integer> treeMap = new TreeMap<>(); //sorted order by key, DOES NOT accept NULL as key
+        Map<String, Integer> treeMap = new TreeMap<>(); //sorted order by key, DOES NOT accept NULL as key, only value
 
-        Map<String, Integer> hashTable = new Hashtable<>(); //random order, DOES NOT accept NULL as key
+        treeMap.put("Daniel", 95000);
+        treeMap.put("Emily", 100000);
+        treeMap.put("Bella", 85000);
+        treeMap.put("Aaron", 78000);
+        treeMap.put("Chris", null);
+        treeMap.put("Breanna", null); //value can be null in tree map
+        //treeMap.put(null, 12000); - key cannot be NULL in tree map
+
+        System.out.println("treeMap = " + treeMap);
+
+        System.out.println("----------------------------------------------------------------------------------------");
+
+        Map<String, Integer> hashTable = new Hashtable<>(); //random order, DOES NOT accept NULL as key or value "SYNCED"
+
+        hashTable.put("Daniel", 95000);
+        hashTable.put("Emily", 100000);
+        hashTable.put("Bella", 85000);
+        hashTable.put("Aaron", 78000);
+       // hashTable.put("Chris", null);
+      // hashTable.put("Breanna", null);
+       // hashTable.put(null, 12000);
+        
+        
 
         System.out.println("----------------------------------------------------------------------------------------");
 
