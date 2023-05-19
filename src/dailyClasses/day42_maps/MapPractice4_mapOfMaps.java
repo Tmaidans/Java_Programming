@@ -40,12 +40,31 @@ public class MapPractice4_mapOfMaps {
         person4.put("gender", 'M');
         person4.put("age", 24);
         person4.put("job_title", "full stack SDET");
-        person4.put("salary", 88000);
+        person4.put("salary", 88000.5);
         person4.put("married", true);
         person4.put("hire_date", LocalDate.now());
 
+        Map<Integer,Map<String,Object>> mapOfMaps = new LinkedHashMap<>();
 
+        mapOfMaps.put(1,person1);
+        mapOfMaps.put(2,person2);
+        mapOfMaps.put(3,person3);
+        mapOfMaps.put(4,person4);
 
+        System.out.println(mapOfMaps);
+
+        System.out.println("-----------------------------------------------------------------------------------");
+
+        System.out.println(mapOfMaps.get(2));
+
+        for (Map<String, Object> eachMap : mapOfMaps.values()) { //iterates each smaller map
+            for (Map.Entry<String, Object> eachEntry : eachMap.entrySet()) {
+                if(eachEntry.getKey().equals("salary")){
+                    eachEntry.setValue(((Double)eachEntry.getValue())+666); //raise salary of each employee by "n" ammount
+                    System.out.println(eachMap);
+                }
+            }
+        }
     }
 
 }
